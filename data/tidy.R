@@ -3,7 +3,7 @@ library(here)
 
 # Patient data ------------------------------------------------------------
 
-metaRaw = readr::read_csv("aim_meta.csv") %>% print()
+metaRaw = readr::read_csv(here("data", "aim_meta.csv")) %>% print()
 
 meta = metaRaw %>%
   rename(ID = patient, treatment = treatment_group, sex = gender) %>%

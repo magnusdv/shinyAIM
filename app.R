@@ -8,6 +8,8 @@ rnaData = readRDS(here("data", "rnaData.rds"))
 # Vector with unique gene names
 genes = sort(unique.default(rnaData$Gene))
 
+
+
 # Define UI for application that draws a histogram
 ui = fluidPage(
 
