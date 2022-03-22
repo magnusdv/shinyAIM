@@ -14,7 +14,7 @@ meta = metaRaw %>%
 
 # RNA counts data ---------------------------------------------------------
 
-xraw = readr::read_csv("aim_counts.csv")
+xraw = readr::read_csv(here("data", "aim_counts.csv"))
 
 x = xraw %>%
   pivot_longer(-ensemblID, names_to = c("ID", "Timepoint"), names_sep = "-", values_to = "Count") %>%
